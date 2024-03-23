@@ -1,0 +1,270 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+*{
+  cursor: url(../assets/ahvbc-9zs3z-001.ico),auto;}
+*:active { cursor:url(../assets/al2vc-wno6u-001.ico),auto;}
+
+@font-face {
+  font-family:Peccatum-1;
+  src: url("../fonts/Peccatum-1.ttf");
+}
+@font-face {
+  font-family:StarseedPro-2;
+  src: url("../fonts/StarseedPro-2.ttf");
+}
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+header{z-index: 999}
+.navbar{
+  background-color: rgba(0, 0, 0, 100);
+  font-family:StarseedPro-2;
+}
+#logo1 {
+  height: 4rem;
+  width: auto;
+  z-index: 999;
+  left: 0;
+}
+#logo2 {
+  position: fixed;
+  top: 0.2rem;
+  right:0;
+  height: 5rem;
+  width: 5rem;
+  animation: mainrotate linear 6s infinite;
+  transform-origin: center center;
+  z-index: 999;
+}@keyframes mainrotate {
+   from {
+     transform: translate(0, 0) rotateZ(0deg);
+   }
+   to {
+     transform: translate(0, 0) rotateZ(360deg);
+   }
+ }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family:StarseedPro-2;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.level4{width: 100vw;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0vw;
+}
+#sun{width: 60vw;
+  position: absolute;opacity: 40%;
+  top: 0rem;
+  left: -20vw;
+  animation: aboutmeflower3 linear 5s infinite;
+  transform-origin: center center;
+}
+@keyframes aboutmeflower3 {
+  25% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 30%;
+  }
+  75% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 30%;
+  }
+}
+#ha{width: 80vw;
+  position: absolute;opacity: 10%;
+  top: 50rem;
+  left: 10vw;
+}
+#ani{width: 60vw;
+  position: absolute;opacity: 40%;
+  top: 120rem;
+  left: 40vw;
+  animation: iaileftrotate linear 3s infinite;
+  transform-origin: center center;
+}
+@keyframes iaileftrotate {
+  0% {
+    opacity: 40%;transform: translate(0, 0) rotateZ(0deg) ;
+  }
+  25%{
+    opacity: 50%;transform: translate(0, 0) rotateZ(5deg) ;
+  }
+  50% {
+    opacity: 60%;transform: translate(0, 0) rotateZ(10deg) ;
+  }
+  75% {
+    opacity: 40%;transform: translate(0, 0) rotateZ(5deg) ;
+  }
+  100% {
+    opacity: 50%;transform: translate(0, 0) rotateZ(-0deg) ;
+  }
+}
+#iaileft{
+  width: 30vw;
+  position: absolute;
+  left: 10vw;
+  top: 160rem;
+  transform:rotate(-30deg);
+  opacity: 80%;
+  animation: iaileftrotate linear 3s infinite;
+  transform-origin: center center;
+}
+@keyframes iaileftrotate {
+  0% {
+    opacity: 70%;transform: translate(0, 0) rotateZ(-30deg) ;
+  }
+  25%{
+    opacity: 80%;transform: translate(0, 0) rotateZ(-25deg) ;
+  }
+  50% {
+    opacity: 90%;transform: translate(0, 0) rotateZ(-20deg) ;
+  }
+  75% {
+    opacity: 80%;transform: translate(0, 0) rotateZ(-25deg) ;
+  }
+  100% {
+    opacity: 70%;transform: translate(0, 0) rotateZ(-30deg) ;
+  }
+}
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+.pict{
+  height: 150px;
+  width: auto;
+  }
+.l4title{
+  font-family:Peccatum-1;
+}
+.l4content{
+  font-family:StarseedPro-2;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+#teap{
+  height: 500px;
+  width: auto;
+}
+#teac{
+  height: 500px;
+  width: auto;
+}
+#teaa{
+  height: 500px;
+  width: auto;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}

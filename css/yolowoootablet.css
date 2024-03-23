@@ -1,0 +1,1218 @@
+*{
+
+    cursor: url(../assets/ahvbc-9zs3z-001.ico),auto;}
+*:active { cursor:url(../assets/al2vc-wno6u-001.ico),auto;}
+
+
+@font-face {
+    font-family:Peccatum-1;
+    src: url("../fonts/Peccatum-1.ttf");
+}
+@font-face {
+    font-family:StarseedPro-2;
+    src: url("../fonts/StarseedPro-2.ttf");
+}@media screen and (min-width:500px) and (max-width:850px ) {
+    .header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 4rem;
+        z-index: 998;
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
+    #logo1 {
+        width: 20rem;
+        height: 4rem;
+        z-index: 999;
+        position: fixed;
+
+    }
+
+
+    #logo2 {
+        position: fixed;
+        top: 0;
+        left: 92vw;
+        width: 4rem;
+        height: 4rem;
+        /*height: 45px;*/
+        /*width: 45px;*/
+        animation: mainrotate linear 6s infinite;
+        transform-origin: center center;
+        z-index: 999;
+    }
+
+    @keyframes mainrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg);
+        }
+    }
+    .main-banner {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        top: 1rem;
+    }
+    #creativity {
+        display: flex;
+        position: absolute;
+        font-family: Peccatum-1;
+        font-size: 7rem;
+        color: black;
+        left: 27vw;
+        width: 70vw;
+        top: 1.5rem;
+    }
+    #creativity:after{
+        content: url("../assets/SVG/indextianping.svg");
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 2rem;
+        left: 25rem;
+        z-index: 20;
+        animation: tianping linear 5s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes tianping {
+        25% {
+            transform: translate(0, 0) rotateZ(5deg);
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(10deg);
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(5deg);
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+
+    }
+    #eye{
+        width: 8rem;
+        height: auto;
+        position: absolute;
+        top: 12rem;
+        left: 13rem;
+        z-index: 0;
+        -webkit-transform: rotate(-5deg);
+
+    }
+    #armillary {
+        position: absolute;
+        color: black;
+        top: 8rem;
+        left: 35vw;
+        width: 70vw;
+        font-size: 7rem;
+        font-family: Peccatum-1;
+    }
+    #sphere {
+        position: absolute;
+        font-family: Peccatum-1;
+        font-size: 7rem;
+        color: black;
+        top: 14rem;
+        left: 23vw;
+        width: 70vw;
+    }
+    #Entanglment {
+        width: 45vw;
+        font-family: Peccatum-1;
+        position: relative;
+        display: flex;
+        top: 19rem;
+        left: 33vw;
+        font-size: 1.5rem;
+        color: black;
+        display: flex
+    }
+    #as{
+        top: 7rem;
+        left: 1vw;
+        width: 45vw;
+        height: 45vw;
+
+    position: absolute;
+    animation: mainrotate2 linear 5s infinite;
+    transform-origin: center center;
+}
+
+@keyframes mainrotate2 {
+    20% {
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+    40% {
+        transform: translate(0, 0) rotateZ(5deg);
+    }
+    60% {
+        transform: translate(0, 0) rotateZ(0deg);
+    }
+    80% {
+        transform: translate(0, 0) rotateZ(-5deg);
+    }
+    100% {
+        transform: translate(0, 0) rotateZ(0deg);
+    }}
+    #blankhands{
+
+        top: 6rem;
+        position: absolute;
+        width: 50vw;
+        height: 25vw;
+        left: -5vw;
+        animation: mainrotate3 linear 5s infinite;
+        transform-origin: center center;
+    }
+
+
+    @keyframes mainrotate3 {
+        20% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        40% {
+            transform: translate(0, 0) rotateZ(10deg);
+        }
+        60% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        80% {
+            transform: translate(0, 0) rotateZ(-10deg);
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+    }
+    #welcome{
+        width: 80vw;
+        font-family: StarseedPro-2;
+        position: absolute;
+        top: 22rem;
+        font-size: 3rem;
+        color: #fff;
+        -webkit-text-stroke: 0.1rem #000;
+        left: 13vw;
+        display: flex;
+        text-decoration: line-through
+    }
+    #welcome:after{
+        content: url("../assets/SVG/indexgutou_1.svg");
+        width: 12rem;
+        height: 5rem;
+        position: absolute;
+        top: -1rem;
+        left: 32rem;
+        z-index: 20;
+    }
+    #welcome:before{
+        content: url("../assets/SVG/indexxingxing.svg");
+        width: 4rem;
+        height: auto;
+        position: absolute;
+        top: 0rem;
+        left: -5rem;
+        z-index: 20;
+    }
+    .aboutme{
+        position: relative;
+        width: 100%;
+        height:50vh;
+        display: flex;
+
+
+    }
+    #description-title1{
+        font-family: StarseedPro-2;
+        position: absolute;
+        top: -10rem;
+        font-size: 6rem;
+        color: #fff;
+        -webkit-text-stroke: 0.2rem #000;
+        left: 50vw;
+        width: 50vw;
+        -webkit-transform: rotate(5deg); /* Safari and Chrome */
+
+    }
+    #description-title2{
+        font-family: Peccatum-1;
+        position: relative;
+        font-size: 5rem;
+        white-space: nowrap;
+        top: -5rem;
+        left: 5vw;
+        width: 95vw;
+        color: #000;
+        line-height: 80%;
+        -webkit-transform: rotate(5deg);
+        animation-name: rightMove, bottomMove;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rightMove {
+        50% {
+            animation-timing-function: linear;
+            left: -30vw;
+        }
+    }
+
+    @keyframes bottomMove {
+        50% {
+            animation-timing-function: linear;
+            top: -10vh;
+        }
+    }
+    #bumengwang{
+        position: absolute;
+        top: 0vh;
+        left: 3vw;
+        width: 7vw;
+        z-index: 2;animation: bumengwangrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes bumengwangrotate {
+        0% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        25%{
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(-40deg) ;
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+
+
+
+    }
+    #aboutmeflower {
+        position: absolute;
+        top: 10rem;
+        left: 40vw;
+        width: 26vw;
+        height: auto;
+        opacity: 50%;
+        animation: aboutmeflower3 linear 5s infinite;
+        transform-origin: center center;
+        z-index: 20;
+    }
+
+
+    @keyframes aboutmeflower3 {
+        25% {
+            opacity: 50%;
+        }
+        50% {
+            opacity: 70%;
+        }
+        75% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 30%;
+        }
+
+    }
+
+    #aboutmecontent1{
+        position: absolute;
+        display: flex;
+        top:1rem;
+        width: 80vw;
+        left: 15vw;
+        padding:  0;
+        font-size: 1.2rem;
+        z-index: 5;
+        color: black;
+
+    }
+    #aboutmecontent2{
+        position: absolute;
+        display: flex;
+        top:11rem;
+        width: 80vw;
+        left: 10vw;
+        text-align: center;
+        padding:  0;
+        font-size: 1.2rem;
+        z-index: 5;
+        color: black;
+
+    }
+    #aboutmecontent3{
+        position: absolute;
+        display: flex;
+        top:19rem;
+        width: 46vw;
+        left: 24vw;
+        text-align: center;
+        padding:  0;
+        font-size: 1.2rem;
+        z-index: 5;
+        color: black;
+
+    }
+
+
+
+    #ABpic{
+        position: absolute;
+        top: 20rem;
+        /*border: 1px solid black;*/
+        width: 100vw;
+        height: 80vh;
+
+        left: 0;
+        /*background: black;*/
+    }
+    .A {float: left;width: 50%;}
+
+    .B {float: right;width: 50%;}
+    #apic{
+        position: absolute;
+        left: 0;
+        height: 20rem;
+        width: auto;
+
+
+
+    }
+    #bpic{
+        position: absolute;
+        right: 0;
+        height: 20rem;
+        width: auto;
+
+    }
+    #Aimg {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        height: 18rem;
+        z-index: -20;
+        clip-path: ellipse(12vw 9rem at 50% 50%);
+
+    }
+    #Bimg {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        height: 18rem;
+        z-index: -20;
+        clip-path: ellipse(12vw 9rem at 50% 50%);
+    }
+
+
+    #apic:hover
+    {
+
+        opacity:0.5;
+    }
+    #bpic:hover
+    {
+
+        opacity:0.5;
+    }
+    .artanddesign {
+        position: relative;
+        width: 100%;
+        height: 240vh;
+        display: flex;
+        top: 10rem;
+    }
+
+    #adluopan{
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        left: -10vw;
+        top: 0rem;
+        animation: adluopanrotate linear 20s infinite;
+        transform-origin: 25vw 25vw;
+        z-index: 0;
+        opacity:0.5;
+        clip-path: circle(27vw at center)
+    }
+
+    @keyframes adluopanrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+
+    #adpic2{
+        position: absolute;
+        width:15vw ;
+        left:85vw;
+        top: 28rem;
+        z-index: 0;
+        opacity:0.3;
+    }
+    #aadhands{
+        position: absolute;
+        width:20vw ;
+        height: auto;
+        left:40vw;
+        top: 45em;
+        z-index: 0;
+        opacity: 50%;
+        animation: aadhand linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes aadhand {
+        25% {
+            opacity: 20%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 50%;
+        }
+    }
+
+    #artanddesigntitle1{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 0rem;
+        left:60vw;
+        color: #000;
+    }
+
+    #toexpress{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 75vw;
+        top: 8rem;
+        font-size: 3rem;
+        color: black;
+    }
+    #artanddesigntitle2{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:5vw;
+        color: #000;
+    }
+    #tocommunicate{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left:35vw;
+        top: 37rem;
+        font-size: 3rem;
+        color: black;
+    }
+    #artanddesigncontent1{
+        width: 80vw;
+        left: 10vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 14rem;
+        font-family: StarseedPro-2;
+    }
+    #artanddesigncontent2{
+        width: 80vw;
+        left: 10vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 48rem;
+        font-family: StarseedPro-2;
+        z-index: 1;
+    }
+    .aadpic{width: 80vw;
+        height: auto;
+        position: absolute;
+        top: 40rem;
+        left: 10vw;
+        clip-path: inset( 400px 0 0 0 );
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+
+
+    }
+    .aadpic:hover{width: 80vw;
+        height: auto;
+        position: absolute;
+        top: 40rem;
+        left: 10vw;
+        clip-path: inset( 400px 0 0 0 );
+
+
+    }
+    .carousel-caption {
+        position: absolute;
+        color: black;
+
+    }
+    .carousel-control-prev-icon{
+        position: absolute;
+        top: 35rem;
+    }
+    .carousel-control-next-icon{
+        position: absolute;
+        top: 35rem;
+    }
+    .aadpic h5{
+        color: white;
+        font-size: 5rem;
+        font-family:Peccatum-1
+    }
+    .aadpic p{
+        color: white;
+        font-size: 2rem;
+        font-family: StarseedPro-2;
+    }
+    .scienceandengineer{
+        background: black;
+        height: 200vh;
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    #sae3j{
+        width:25vw;
+        position: absolute;
+        left:20vw;
+        z-index: 9;
+        top:3rem;
+        animation: sae3j linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes sae3j {
+        25% {
+            opacity: 20%;
+        }
+        50% {
+            opacity: 30%;
+        }
+        75% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 30%;
+        }
+
+    }
+    #saekey{
+        width:5vw;
+        position: absolute;
+        left:1vw;
+        z-index: 9;
+        top:30rem;
+        animation: saekeyrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes saekeyrotate {
+        0% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        25%{
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(-40deg) ;
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+    }
+
+    #sejixie{
+        position: relative;
+        width:auto;
+        height: 200vh;
+        left:-1vw;
+        top: 0;
+        z-index: 1;
+        opacity:0.5;
+    }
+    #scienceandengineertitle1{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 3rem;
+        left:48vw;
+        color: #FFF;
+        z-index: 10;
+    }
+    #scienceandengineertitle2{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:35vw;
+        color: #FFF;
+        z-index: 10;
+
+    }
+    #toexplpre{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 81vw;
+        top: 11rem;
+        font-size: 3rem;
+        color: white;
+        z-index: 20;
+    }
+    #toinvente{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 74vw;
+        top: 38rem;
+        font-size: 3rem;
+        color:white;
+        z-index: 20;
+    }
+    #scienceandengineercontent1{
+        width: 40vw;
+        left: 12vw;
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 15rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    #sejixiepic{
+        width:15vw;
+        position: absolute;
+        left:55vw;
+        z-index: 9;
+        top: 25rem;
+        animation: sejixiepicrotate linear 6s infinite;
+        transform-origin: center center;
+    }
+    @keyframes sejixiepicrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+    #scienceandengineercontent2{
+        width: 90vw;
+        left: 5vw;
+        position: absolute;
+        top:45rem;
+        z-index: 20;
+        font-family:StarseedPro-2;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+
+    }
+
+
+    .philosophy{
+        height: 220vh;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        background: black;
+        position: relative;
+    }
+    #philo{
+        position: relative;
+        width:100vw ;
+        left:0;
+        top: 0;
+        z-index: 1;
+        opacity:0.5;
+    }
+    #philopic{
+        position: absolute;
+        width:40vw ;
+        right:-20vw;
+        top: 0;
+        z-index: 2;
+    }
+    #piloheart{
+        position: absolute;
+        width:12vw ;
+        left: 15vw;
+        top:12rem;
+        z-index: 2;
+        opacity: 70%;
+        animation: piloheart linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes piloheart {
+        25% {
+            width: 13vw;opacity: 80%;
+        }
+        50% {
+            opacity: 14vw;opacity: 90%;
+        }
+        75% {
+            opacity: 13vw;opacity: 80%;
+        }
+
+        100% {
+            opacity: 12vwopacity: 70%;
+        }
+
+    }
+    #philocontent1{
+        width: 50vw;
+        left: 25vw;
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 1rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    #philosophytitle{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:5vw;
+        color: #FFF;
+        z-index: 10;
+    }
+    #philopic2{
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: 148vh;
+        z-index: 2;
+        grid-gap: 0;
+    }
+    #philocontent2{
+        width: 90vw;
+        left: 5vw;
+        position: absolute;
+        top: 43rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+        font-family:StarseedPro-2;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+    }
+    .economy{
+        height: 200vh;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        position: relative;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    #ecosun{
+        position: absolute;
+        width:50vw ;
+        left:-25vw;
+        top: 15vh;
+        z-index: 2;
+    }
+    #ecoshine{
+        position: absolute;
+        width:100vw ;
+        left:-50vw;
+        top: -45vh;
+        opacity:0.5;
+        z-index: 1;
+        animation: ecoshinerotate linear 20s infinite;
+        transform-origin: center center;
+    }
+    @keyframes ecoshinerotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+    #ecofire{
+        position: absolute;
+        width:6vw ;
+        left:90vw;
+        top: 32rem;
+        z-index: 1;
+        animation: ecofirerotate linear 3s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes ecofirerotate{
+        25% {
+            width: 7vw;opacity: 80%;
+        }
+        50% {
+            opacity: 8vw;opacity: 90%;
+        }
+        75% {
+            opacity: 7vw;opacity: 80%;
+        }
+
+        100% {
+            opacity: 6vwopacity: 70%;
+        }
+
+    }
+    #ecodog{
+        position: absolute;
+        width:20vw;
+        left:70vw;
+        top: 70rem;
+        z-index: 1;
+        animation: ecodogrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+    @keyframes ecodogrotate {
+        0% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        25%{
+            transform: translate(0, 0) rotateZ(-5deg) ;
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(-0deg) ;
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(5deg) ;
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+    }
+    #economytitle{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 0vh;
+        left:50vw;
+        color: #000;
+        z-index: 10;
+    }
+    #economytitle2{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 5rem;
+        white-space: nowrap;
+        top: 15rem;
+        left:40vw;
+        color: #000;
+        z-index: 10;
+        line-height:80%;
+    }
+    #economycontent1{
+        width: 20vw;
+        left: 75vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 12rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    #economycontent2{
+        width: 40vw;
+        left: 25vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 40rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+        text-align: center;
+        margin: auto;
+    }
+    #ecty{
+        width: 70vw;
+        left: 10vw;
+        position: absolute;
+        top: 20rem;
+    }
+
+    .InheritanceAndInnovation{
+        height: 220vh;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        /*background: black;*/
+        position: relative;
+
+    }
+    #taf1{
+        position: absolute;top:10rem;
+        width: 50vw;
+        left: 25vw;
+        animation: taf1 linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes taf1 {
+        25% {
+            opacity: 20%;
+        }
+        50% {
+            opacity: 30%;
+        }
+        75% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 30%;
+        }
+    }
+    #taf2{
+        position: absolute;top:5rem;
+        width: 40vw;
+        left: -20vw;
+        opacity: 50%;
+    }
+    #taf3{
+        position: absolute;top:5rem;
+        width: 40vw;
+        right: -20vw;
+        opacity: 50%;
+    }
+    #IAItitle1{
+        position: absolute;top:2rem;
+        left: 15vw;
+        font-family:Peccatum-1;
+        font-size: 12rem;
+        white-space: nowrap;
+        color: #000;
+        z-index: 10;
+    }
+    #IAItitle2{
+        position: absolute;top:13rem;
+        left: 35vw;
+        font-family:Peccatum-1;
+        font-size: 12rem;
+        white-space: nowrap;
+        color: #000;
+        z-index: 10;
+    }
+    #IAIcontent1{
+        width: 40vw;
+        left: 30vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 27rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+        text-align: center;
+    }
+    #IAIcontent2{
+        width: 100vw;
+        left: 0;
+        position: absolute;
+        top: 50rem;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+    }
+    #iaileft{
+        width: 20vw;
+        position: absolute;
+        left: 10vw;
+        top: 40rem;
+        transform:rotate(-30deg);
+        opacity: 80%;
+        animation: iaileftrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+    @keyframes iaileftrotate {
+        0% {
+            opacity: 70%;transform: translate(0, 0) rotateZ(-30deg) ;
+        }
+        25%{
+            opacity: 80%;transform: translate(0, 0) rotateZ(-25deg) ;
+        }
+        50% {
+            opacity: 90%;transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        75% {
+            opacity: 80%;transform: translate(0, 0) rotateZ(-25deg) ;
+        }
+        100% {
+            opacity: 70%;transform: translate(0, 0) rotateZ(-30deg) ;
+        }
+    }
+    #iairight{
+        width: 20vw;
+        position: absolute;
+        right: 10vw;
+        top: 40rem;
+        transform:rotate(30deg);
+        opacity: 70%;
+        animation: iairightrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+    @keyframes iairightrotate {
+        0% {
+            opacity: 70%;transform: translate(0, 0) rotateZ(30deg) ;
+        }
+        25%{
+            opacity: 80%;transform: translate(0, 0) rotateZ(25deg) ;
+        }
+        50% {
+            opacity: 90%;transform: translate(0, 0) rotateZ(20deg) ;
+        }
+        75% {
+            opacity: 80%;transform: translate(0, 0) rotateZ(25deg) ;
+        }
+        100% {
+            opacity: 70%;transform: translate(0, 0) rotateZ(30deg) ;
+        }
+    }
+    #iai1{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 5vw;
+        top: 10rem;
+        z-index: 1;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+
+    #iai2{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 17vw;
+        top: 9.5rem;
+        z-index: 2;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+
+    #iai3{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 29vw;
+        top: 9rem;
+        z-index: 3;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+    #iai4{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 41vw;
+        top: 8.5rem;
+        z-index: 4;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+    #iai5{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 53vw;
+        top: 9rem;
+        z-index: 3;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+    #iai6{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 65vw;
+        top: 9.5rem;
+        z-index: 2;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+    #iai7{
+        width: 18vw;
+        height: auto;
+        position: absolute;
+        left: 77vw;
+        top: 10rem;
+        z-index: 1;
+        clip-path: inset(0 0 0 0 round 20px)
+    }
+    #iai1:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai2:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai3:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai4:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai5:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai6:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+    #iai7:hover{
+        z-index: 20;
+        top: 8rem;
+    }
+}

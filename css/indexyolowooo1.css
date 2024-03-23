@@ -1,0 +1,245 @@
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Yolowooo Yolowooo Yolowooo Yolowooo . . . . . . . Nav"
+    ". . . . . cas cas cas cas cas cas cas"
+    ". . . . . cas cas cas cas cas cas cas"
+    ". . . . . cas cas cas cas cas cas cas"
+    ". . . . . . Welcome Welcome Welcome Welcome Welcome .";
+}
+
+.Yolowooo { grid-area: Yolowooo; }
+
+.Nav { grid-area: Nav; }
+
+.cas { grid-area: cas; }
+
+.Welcome { grid-area: Welcome; }
+
+*{
+    width: 100%;
+
+
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    font: inherit;
+    vertical-align: baseline;
+    cursor: url(../assets/ahvbc-9zs3z-001.ico),auto;
+url(../assets/a7fhb-yl5de-001.ico),pointer
+
+}
+@font-face {
+    font-family:Peccatum-1;
+    src: url("../fonts/Peccatum-1.ttf");
+}
+@font-face {
+    font-family:StarseedPro-1;
+    src: url("../fonts/StarseedPro-1.ttf");
+}
+
+
+#header::before{
+    display: grid;
+    grid-row: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    z-index: 998;
+    content: '';
+}
+#logo1 {
+    position: fixed;
+    /*top: 1vh;*/
+    /*top: 1vh;*/
+    /*left: 0.5vw;*/
+    /*height: 14vh;*/
+
+    /*width: 30vw;*/
+    z-index: 999;
+
+
+
+}
+#logo2{
+    position: fixed;
+    /*top: 1vh;*/
+    /*left:90vw;*/
+    /*height: 13vh;*/
+    /*width: 13vh;*/
+    animation: mainrotate linear 6s infinite;
+    transform-origin: center center;
+    z-index: 999;
+}
+
+@keyframes mainrotate {
+    from {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+    to {
+        transform: translate(0, 0) rotateZ(360deg) ;
+    }
+}
+
+
+
+#as{
+    top:5vh;
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    left:5vw;
+    animation: mainrotate2 linear 5s infinite;
+    transform-origin: center center;
+}
+
+@keyframes mainrotate2 {
+    20% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+    40%{
+        transform: translate(0, 0) rotateZ(5deg) ;
+    }
+    60% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+    80% {
+        transform: translate(0, 0) rotateZ(-5deg) ;
+    }
+    100% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+
+
+}
+#blankhands{
+    top: 15vh;
+    position: absolute;
+    width: 55vw;
+    height: 35vw;
+    left: 0;
+    animation: mainrotate3 linear 5s infinite;
+    transform-origin: center center;
+}
+
+@keyframes mainrotate3 {
+    20% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+    40%{
+        transform: translate(0, 0) rotateZ(10deg) ;
+    }
+    60% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+    80% {
+        transform: translate(0, 0) rotateZ(-10deg) ;
+    }
+    100% {
+        transform: translate(0, 0) rotateZ(0deg) ;
+    }
+
+}
+
+#creativity{
+    display: grid;
+    font-family:Peccatum-1;
+    position: absolute;
+    left:33vw;
+    font-size: 780px;
+    top: 17vh;
+    letter-spacing:2px;
+    line-height:80%
+
+
+}
+#armillary{
+    display: grid;
+    font-family:Peccatum-1;
+    position: absolute;
+    left:45vw;
+    font-size: 780px;
+    top: 38vh;
+    letter-spacing:2px;
+    line-height:80%
+
+
+}
+#sphere {
+    display: grid;
+    left: 35vw;
+    font-family:Peccatum-1;
+    position: absolute;
+    font-size: 780px;
+    top: 60vh;
+    letter-spacing:2px;
+    line-height:80%
+}
+
+
+#Entanglment{
+    display: grid;
+    font-family:Peccatum-1;
+    /*position: absolute;*/
+    /*top: 70vh;*/
+    /*left:66vw;*/
+    font-size: 200px;
+
+}
+#welcome {
+    display: grid;
+
+
+    font-family: GT Walsheim Pro;
+
+    /*position: absolute;*/
+    /*top: 77vh;*/
+    font-size: 180px;
+    color: #fff;
+    /*-webkit-text-stroke: 7px #000;*/
+    /*text-align: center !important;*/
+    /*left: 37vw;*/
+    /*display: block;*/
+    /*width: 50vw;*/
+}
+
+
+
+#welcome:after {
+    height: 15px;
+    width:37vw;
+    background: #000;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 300px;
+    left: 10vw;
+    animation:myfirst 2s;
+    -webkit-animation:myline5s; /* Safari and Chrome */
+}
+
+@keyframes myline
+{
+    from {height: 15px;}
+    to {height: 50px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

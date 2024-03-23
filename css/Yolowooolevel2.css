@@ -1,0 +1,152 @@
+
+*{
+  cursor: url(../assets/ahvbc-9zs3z-001.ico),auto;}
+*:active { cursor:url(../assets/al2vc-wno6u-001.ico),auto;}
+
+@font-face {
+  font-family:Peccatum-1;
+  src: url("../fonts/Peccatum-1.ttf");
+}
+@font-face {
+  font-family:StarseedPro-2;
+  src: url("../fonts/StarseedPro-2.ttf");
+}.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+.navbar{
+  background-color: rgba(0, 0, 0, 100);
+  font-family:StarseedPro-2;
+}
+.btitle{font-family:StarseedPro-2;}
+#logo1 {
+  height: 4rem;
+  width: auto;
+  z-index: 999;
+  left: 0;
+
+}
+#logo2 {
+  position: fixed;
+  top: 0.2rem;
+  right:0;
+  height: 5rem;
+  width: 5rem;
+  animation: mainrotate linear 6s infinite;
+  transform-origin: center center;
+  z-index: 999;}@keyframes mainrotate {
+                  from {
+                    transform: translate(0, 0) rotateZ(0deg);
+                  }
+                  to {
+                    transform: translate(0, 0) rotateZ(360deg);
+                  }
+                }
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family:StarseedPro-2;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+.l2title{
+  font-family:Peccatum-1;
+}
+body{
+  font-family:StarseedPro-2;}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}

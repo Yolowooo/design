@@ -1,0 +1,857 @@
+
+*{
+    cursor: url(../assets/ahvbc-9zs3z-001.ico),auto;}
+*:active { cursor:url(../assets/al2vc-wno6u-001.ico),auto;}
+
+@font-face {
+    font-family:Peccatum-1;
+    src: url("../fonts/Peccatum-1.ttf");
+}
+@font-face {
+    font-family:StarseedPro-2;
+    src: url("../fonts/StarseedPro-2.ttf");
+}
+@media screen and (min-width:850px ) {
+    .header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: black;
+        width: 100%;
+        height: 5rem;
+        z-index: 998;
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
+
+    #logo1 {
+        height: 5rem;
+        width: 25rem;
+        z-index: 999;
+        left: 0;
+        position: fixed;
+
+    }
+
+
+    #logo2 {
+        position: fixed;
+        top: 0;
+        left: 93vw;
+        height: 5rem;
+        width: 5rem;
+        animation: mainrotate linear 6s infinite;
+        transform-origin: center center;
+        z-index: 999;
+    }
+
+    @keyframes mainrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg);
+        }
+    }
+
+    .main-banner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    #di1{
+        position: absolute;
+        width: 1rem;
+        height: auto;
+        left: 5rem;
+        top: 8rem;
+    }
+    #di2{
+        position: absolute;
+        width: 0.7rem;
+        height: auto;
+        left: 3rem;
+        top: 13rem;
+    }
+    #di3{
+        position: absolute;
+        width: 2rem;
+        height: auto;
+        left: 2rem;
+        top: 33rem;
+    }
+    #di4{
+        position: absolute;
+        width: 1rem;
+        height: auto;
+        left: 70rem;
+        top: 26rem;
+    }
+    #di5{
+        position: absolute;
+        width: 1rem;
+        height: auto;
+        left: 90rem;
+        top: 25rem;
+    }
+    #di6{
+        position: absolute;
+        width: 1rem;
+        height: auto;
+        left: 80rem;
+        top: 28rem;
+    }
+    #di{
+        animation: didi linear 5s infinite;
+        transform-origin: center center;
+    }
+
+
+    @keyframes didi {
+        25% {
+            opacity: 50%;
+        }
+        50% {
+            opacity: 70%;
+        }
+        75% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 30%;
+        }
+
+    }
+    #creativity {
+        display: flex;
+        position: absolute;
+        left: 33vw;
+        width: 50vw;
+        font-family: Peccatum-1;
+        font-size: 13rem;
+        color: black;
+        top: 1rem;
+    }
+    #creativity:after{
+        content: url("../assets/SVG/indextianping.svg");
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        top: 5rem;
+        left: 48rem;
+        z-index: 20;
+        animation: tianping linear 5s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes tianping {
+        25% {
+            transform: translate(0, 0) rotateZ(5deg);
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(10deg);
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(5deg);
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+
+    }
+
+    #armillary {
+        position: absolute;
+        top: 11rem;
+        width: 50vw;
+        font-family: Peccatum-1;
+        font-size: 13rem;
+        color: black;
+        left: 42vw;
+    }
+    #eye{
+        width: 15rem;
+        height: auto;
+        position: absolute;
+        top: 16rem;
+        left: 29vw;
+        z-index: 0;
+        -webkit-transform: rotate(-5deg);
+
+    }
+    #sphere {
+        position: absolute;
+        width: 50vw;
+        top: 21rem;
+        left: 28vw;
+        font-family: Peccatum-1;
+        font-size: 13rem;
+        color: black;
+    }
+    #Entanglment {
+        width: 45vw;
+        font-family: Peccatum-1;
+        position: relative;
+        display: flex;
+        top: 30rem;
+        left: 61vw;
+        font-size: 3.5rem;
+        color: black;
+        display: flex
+    }
+    #as {
+        top: 7rem;
+        position: absolute;
+        width: 43vw;
+        height: 43vw;
+        left: 5vw;
+        animation: mainrotate2 linear 5s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes mainrotate2 {
+        20% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        40% {
+            transform: translate(0, 0) rotateZ(5deg);
+        }
+        60% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        80% {
+            transform: translate(0, 0) rotateZ(-5deg);
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+
+
+    }
+    #blankhands {
+        top: 10vh;
+        position: absolute;
+        width: 47vw;
+        height: 30vw;
+        left: 0;
+        animation: mainrotate3 linear 5s infinite;
+        transform-origin: center center;
+    }
+
+
+    @keyframes mainrotate3 {
+        20% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        40% {
+            transform: translate(0, 0) rotateZ(10deg);
+        }
+        60% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+        80% {
+            transform: translate(0, 0) rotateZ(-10deg);
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg);
+        }
+
+    }
+    #welcome {
+        font-family: StarseedPro-2;
+        position: absolute;
+        top: 35rem;
+        font-size: 4.5rem;
+        color: #fff;
+        -webkit-text-stroke: 0.2rem #000;
+        left: 45vw;
+        display: flex;
+        text-decoration: line-through
+    }
+    #welcome:after{
+        content: url("../assets/SVG/indexgutou_1.svg");
+        width: 15rem;
+        height: auto;
+        position: absolute;
+        top: 5rem;
+        left: 37rem;
+        z-index: 20;
+    }
+    #welcome:before{
+        content: url("../assets/SVG/indexxingxing.svg");
+        width: 7rem;
+        height: auto;
+        position: absolute;
+        top: 0rem;
+        left: -10rem;
+        z-index: 20;
+    }
+
+
+
+    .aboutme {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+
+    }
+
+    #description-title1 {
+        font-family: StarseedPro-2;
+        position: absolute;
+        top: -5vh;
+        font-size: 11rem;
+        color: #fff;
+        -webkit-text-stroke: 0.3rem #000;
+        left: 50vw;
+        width: 70vw;
+        -webkit-transform: rotate(5deg); /* Safari and Chrome */
+    }
+    #description-title2 {
+        font-family: Peccatum-1;
+        position: relative;
+        font-size: 10rem;
+        white-space: nowrap;
+        top: 10vh;
+        left: 5vw;
+        width: 95vw;
+        color: #000;
+        line-height: 80%;
+        -webkit-transform: rotate(5deg);
+        animation-name: rightMove, bottomMove;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rightMove {
+        50% {
+            animation-timing-function: linear;
+            left: -40vw;
+        }
+    }
+    @keyframes bottomMove {
+        50% {
+            animation-timing-function: linear;
+            top: -10vh;
+        }
+    }
+    #bumengwang{
+        position: absolute;
+        top: 15vh;
+        left: 3vw;
+        width: 7vw;
+        z-index: 2;animation: bumengwangrotate linear 3s infinite;
+        transform-origin: center center;
+    }
+
+    @keyframes bumengwangrotate {
+        0% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        25%{
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        50% {
+            transform: translate(0, 0) rotateZ(-40deg) ;
+        }
+        75% {
+            transform: translate(0, 0) rotateZ(-20deg) ;
+        }
+        100% {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+    }
+    #aboutmeflower {
+        position: absolute;
+        top: 15rem;
+        left: 37vw;
+        width: 25vw;
+        height: auto;
+        opacity: 50%;
+        animation: aboutmeflower3 linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes aboutmeflower3 {
+        25% {
+            opacity: 20%;
+        }
+        50% {
+            opacity: 30%;
+        }
+        75% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 30%;
+        }
+    }
+    #aboutmecontent{
+        position: absolute;
+        top: 30vh;
+        width: 56vw;
+        left: 22vw;
+        text-align: center;
+        padding:  0;
+        font-size: 1.5rem;
+        z-index: 5;
+        color: black;
+    }
+    #ABpic{
+        position: absolute;
+        top: 50vh;
+        /*border: 1px solid black;*/
+        width: 100vw;
+        height: 80vh;
+
+        left: 0;
+        /*background: black;*/
+    }
+    .A {float: left;width: 50%;}
+
+    .B {float: right;width: 50%;}
+    #apic{
+        position: absolute;
+        left: 0;
+        height: 30rem;
+        width: auto;
+        z-index: 10;
+        clip-path: ellipse(11vw 14rem at 50% 50%);
+
+    }
+    #bpic{
+        position: absolute;
+        right: 1.5rem;
+        height: 30rem;
+        width: auto;
+        z-index: 10;
+        clip-path: ellipse(11vw 14rem at 50% 50%);
+    }
+    #Aimg {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        height: 28rem;
+        z-index: 0;
+        clip-path: ellipse(10vw 14rem at 50% 50%);
+
+    }
+    #Bimg {
+        position: absolute;
+        right: 2.5rem;
+        top: 1rem;
+        height: 28rem;
+        z-index: 0;
+        clip-path: ellipse(10vw 14rem at 50% 50%);
+    }
+
+
+    #apic:hover
+    {
+        opacity:0.5;
+    }
+    #bpic:hover
+    {
+        opacity:0.5;
+    }
+    .artanddesign {
+        position: relative;
+        width: 100%;
+        height: 240vh;
+        display: flex;
+        top: 10rem;
+    }
+
+    #adluopan{
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        left: -10vw;
+        top: 0rem;
+        animation: adluopanrotate linear 20s infinite;
+        transform-origin: 25vw 25vw;
+        z-index: 0;
+        opacity:0.5;
+        clip-path: circle(27vw at center)
+    }
+
+    @keyframes adluopanrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+
+    #adpic2{
+        position: absolute;
+        width:15vw ;
+        left:85vw;
+        top: 28rem;
+        z-index: 0;
+        opacity:0.3;
+    }
+    #aadhands{
+        position: absolute;
+        width:20vw ;
+        height: auto;
+        left:40vw;
+        top: 45em;
+        z-index: 0;
+        opacity: 50%;
+        animation: aadhand linear 5s infinite;
+        transform-origin: center center;
+    }
+    @keyframes aadhand {
+        25% {
+            opacity: 20%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 50%;
+        }
+    }
+
+    #artanddesigntitle1{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 0rem;
+        left:60vw;
+        color: #000;
+    }
+
+    #toexpress{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 75vw;
+        top: 8rem;
+        font-size: 3rem;
+        color: black;
+    }
+    #artanddesigntitle2{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:5vw;
+        color: #000;
+    }
+    #tocommunicate{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left:35vw;
+        top: 37rem;
+        font-size: 3rem;
+        color: black;
+    }
+    #artanddesigncontent1{
+        width: 80vw;
+        left: 10vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 14rem;
+        font-family: StarseedPro-2;
+    }
+    #artanddesigncontent2{
+        width: 80vw;
+        left: 10vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 48rem;
+        font-family: StarseedPro-2;
+        z-index: 1;
+    }
+    .aadpic{width: 80vw;
+        height: auto;
+        position: absolute;
+        top: 40rem;
+        left: 10vw;
+        clip-path: inset( 400px 0 0 0 );
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+
+
+    }
+    .aadpic:hover{width: 80vw;
+         height: auto;
+         position: absolute;
+         top: 40rem;
+         left: 10vw;
+         clip-path: inset( 400px 0 0 0 );
+
+
+     }
+    .carousel-caption {
+        position: absolute;
+        color: black;
+
+    }
+    .carousel-control-prev-icon{
+        position: absolute;
+        top: 35rem;
+    }
+    .carousel-control-next-icon{
+        position: absolute;
+        top: 35rem;
+    }
+    .aadpic h5{
+        color: white;
+        font-size: 5rem;
+        font-family:Peccatum-1
+    }
+    .aadpic p{
+        color: white;
+        font-size: 2rem;
+        font-family: StarseedPro-2;
+    }
+    .scienceandengineer{
+        background: black;
+        height: 200vh;
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    #sejixie{
+        position: relative;
+        width:auto;
+        height: 200vh;
+        left:-1vw;
+        top: 0;
+        z-index: 1;
+        opacity:0.5;
+    }
+    #scienceandengineertitle1{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 3rem;
+        left:48vw;
+        color: #FFF;
+        z-index: 10;
+    }
+    #scienceandengineertitle2{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:35vw;
+        color: #FFF;
+        z-index: 10;
+
+    }
+    #toexplpre{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 81vw;
+        top: 11rem;
+        font-size: 3rem;
+        color: white;
+        z-index: 20;
+    }
+    #toinvente{
+        font-family: StarseedPro-2;
+        position: absolute;
+        left: 74vw;
+        top: 38rem;
+        font-size: 3rem;
+        color:white;
+        z-index: 20;
+    }
+    #scienceandengineercontent1{
+        width: 40vw;
+        left: 12vw;
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 15rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    #sejixiepic{
+        width:15vw;
+        position: absolute;
+        left:55vw;
+        z-index: 9;
+        top: 25rem;
+        animation: sejixiepicrotate linear 6s infinite;
+        transform-origin: center center;
+    }
+    @keyframes sejixiepicrotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+    #scienceandengineercontent2{
+        width: 90vw;
+        left: 5vw;
+        position: absolute;
+        top:45rem;
+        z-index: 20;
+
+    }
+
+
+    .philosophy{
+        height: 220vh;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        background: black;
+        position: relative;
+    }
+    #philo{
+        position: relative;
+        width:100vw ;
+        left:0;
+        top: 0;
+        z-index: 1;
+        opacity:0.5;
+    }
+    #philopic{
+        position: absolute;
+        width:40vw ;
+        right:-20vw;
+        top: 0;
+        z-index: 2;
+    }
+    #philocontent1{
+        width: 50vw;
+        left: 25vw;
+        font-size: 3rem;
+        color: #fff;
+        position: absolute;
+        top: 1rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    #philosophytitle{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 30rem;
+        left:5vw;
+        color: #FFF;
+        z-index: 10;
+    }
+    #philopic2{
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: 148vh;
+        z-index: 2;
+    }
+    #philocontent2{
+        width: 90vw;
+        left: 5vw;
+        position: absolute;
+        top: 43rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+        grid: 0;!important;
+    }
+    .economy{
+        height: 200vh;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+        position: relative;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    #ecosun{
+        position: absolute;
+        width:50vw ;
+        left:-25vw;
+        top: 15vh;
+        z-index: 2;
+    }
+    #ecoshine{
+        position: absolute;
+        width:100vw ;
+        left:-50vw;
+        top: -45vh;
+        opacity:0.5;
+        z-index: 1;
+        animation: ecoshinerotate linear 20s infinite;
+        transform-origin: center center;
+    }
+    @keyframes ecoshinerotate {
+        from {
+            transform: translate(0, 0) rotateZ(0deg) ;
+        }
+        to {
+            transform: translate(0, 0) rotateZ(360deg) ;
+        }
+    }
+    #ecofire{
+        position: absolute;
+        width:6vw ;
+        left:90vw;
+        top: 75vh;
+        z-index: 1;
+    }
+    #economytitle{
+        font-family:Peccatum-1;
+        position: absolute;
+        font-size: 12rem;
+        white-space: nowrap;
+        top: 0vh;
+        left:50vw;
+        color: #000;
+        z-index: 10;
+    }
+    #economycontent1{
+        width: 20vw;
+        left: 75vw;
+        font-size: 3rem;
+        color: #000;
+        position: absolute;
+        top: 12rem;
+        font-family: StarseedPro-2;
+        z-index: 20;
+    }
+    .card-image{
+        z-index: 20;
+    }
+
+
+
+}
+
+
+
+
